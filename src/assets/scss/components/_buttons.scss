@@ -1,0 +1,25 @@
+@use "../config/" as *;
+@use "sass:color" as *;
+.btn {
+  padding: 1.5rem 3.6rem;
+  border-radius: var(--btn-radius, 50vmax);
+  background-color: var(--btn-bg, rgba(255, 255, 255, 0.6));
+  backdrop-filter: blur(2rem);
+  border: 0.1rem solid white;
+  color: var(--btn-color, var(--accent-light));
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 1s ease-in-out;
+  font-size: 1.4rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  &:hover {
+    --btn-border: var(--btn-hover-after, var(--secondary));
+    --btn-bg: var(--btn-hover, var(--secondary));
+    --btn-color: var(--btn-hover-color, var(--white));
+  }
+  &:focus {
+    outline: 1px solid var(--dark);
+  }
+}

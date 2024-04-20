@@ -1,0 +1,62 @@
+@use "../config/" as *;
+.product-banner {
+  padding-inline: 2rem;
+  margin-bottom: 5rem;
+  .visual{
+    margin-block: 3rem;
+    .vr-wrap{
+      margin-bottom: 1rem;
+    }
+  }
+  @include mq(md) {
+    .vr-wrap {
+      padding: 0.9vw;
+      margin-bottom: 3rem;
+    }
+  }
+  .content {
+    padding-left: 3rem;
+  }
+  .back {
+    display: flex;
+    align-items: center;
+    color: var(--theme-color, #1371ff);
+    font-size: 3.2rem;
+    font-weight: 800;
+    svg {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+      margin-left: -3rem;
+    }
+  }
+  .features {
+    &-item {
+      line-height: 2;
+    }
+  }
+  .text {
+    line-height: 1.5;
+    margin-top: 1rem;
+    text-align: justify;
+    @include mq(xl) {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+  }
+  h3 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 0.6rem;
+    margin-bottom: 4rem;
+    text-transform: capitalize;
+  }
+  @include mq(xl) {
+    gap: 4rem;
+    display: flex;
+    > * {
+      flex: 1;
+    }
+  }
+}

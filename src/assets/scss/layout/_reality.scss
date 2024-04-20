@@ -1,0 +1,110 @@
+@use "../config/" as *;
+.reality {
+  padding: 4rem 1rem;
+  background: url("/images/homepage/reality-bg.svg") center/contain no-repeat;
+  .head-wrap {
+    max-width: 90rem;
+    margin-inline: auto;
+  }
+  &-head {
+    hr {
+      max-width: 40%;
+      margin-inline: auto;
+      border-color: #d9d9d9;
+      margin-bottom: 2rem;
+    }
+    h3 {
+      margin-bottom: 1.8rem;
+
+      @include mq(md) {
+        margin-bottom: 2.4rem;
+      }
+    }
+  }
+  @include mq(md) {
+    padding-block: 5rem;
+  }
+  &-body {
+    h3 {
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+  }
+  .card {
+    &-icon {
+      background-color: hsla(209, 29%, 65%, 0.71);
+      position: absolute;
+      top: 0;
+      left: 1rem;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      width: 6rem;
+      height: 6rem;
+      padding: 1rem;
+      backdrop-filter: blur(2rem);
+      border: 0.48px solid white;
+
+      svg {
+        height: 100%;
+      }
+      @include mq(lg) {
+        padding: 2rem;
+        left: -6rem;
+        width: 12.4rem;
+        height: 12.4rem;
+      }
+    }
+    &-list {
+      @include mq(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0 5rem;
+      }
+      @include mq(lg) {
+        margin-top: 6rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0 5rem;
+      }
+    }
+    &-item {
+      position: relative;
+      background: linear-gradient(139.6deg, #373a3a 4.41%, #191b1b 96.51%);
+      border-radius: 2rem;
+      color: white;
+      padding: 4rem 3.3rem;
+      margin-top: 5rem;
+      @include mq(md) {
+        border-radius: 4rem;
+        &:last-child {
+          grid-column: span 2;
+        }
+      }
+      @include mq(lg) {
+        padding: 8rem 3.5rem 4rem;
+        &:last-child {
+          grid-column: span 1;
+          .card-icon {
+            right: -6rem;
+            left: auto;
+          }
+        }
+        &:nth-child(2) {
+          .card-icon {
+            left: 0;
+            right: 0;
+            margin-inline: auto;
+          }
+        }
+      }
+    }
+    &-footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 1.5rem;
+      @include mq(md) {
+        right: 2rem;
+      }
+    }
+  }
+}

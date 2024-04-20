@@ -1,0 +1,36 @@
+@use "map" as *;
+@use "mixin" as *;
+
+$font-primary: "Atyp Display TRIAL", sans-serif;
+$font-icon: "custom-icons";
+$grid-columns: 12; // max grid columns
+$base-space: 0.5rem; //5px
+$max-space: 5; // this is maximun number for creating of spacing variables, margins and paddings utility classes
+:root {
+  // generating css variables based on map
+  @each $color, $value in $colors {
+    --#{$color}: #{$value};
+  }
+  // generating space variable
+  @for $space from 0 through $max-space {
+    --space-#{$space}: #{$space * 0.5rem};
+  }
+  // generating container max width
+  @each $width, $value in $container {
+    @if $width ==xs {
+      --container: #{$value};
+    } @else {
+      @include mq($width) {
+        --container: #{$value};
+      }
+    }
+  }
+  --logo-width: 6rem;
+  --logo-height: 1.6rem;
+  --sidebar: 100%;
+  --para: 1.2rem;
+  @include mq(md) {
+    --para: 1.4rem;
+    --sidebar: 9rem;
+  }
+}

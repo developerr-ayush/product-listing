@@ -1,0 +1,215 @@
+@use "../config/" as *;
+
+.contact-full-width {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact {
+  padding-block: 8rem 2rem;
+  // position: relative;
+
+  .paragraph {
+    margin-bottom: 1.2rem;
+  }
+
+  .icon-form {
+    @include mq(md) {
+      justify-content: flex-start;
+    }
+  }
+
+  .icon {
+    width: 100%;
+    padding-left: 0rem;
+    padding-block: 3rem;
+
+    @include mq(md) {
+      width: 36%;
+    }
+
+    li {
+      list-style: none;
+      margin-bottom: 1.7rem;
+      justify-content: start;
+
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 1rem;
+        object-fit: contain;
+      }
+
+      a {
+        color: var(--white);
+        font-size: 1.6rem;
+        font-weight: 400;
+        font-feature-settings: "clig" off, "liga" off;
+      }
+    }
+  }
+
+  form {
+    --input-bg: rgba(0, 0, 0, 0.1);
+    --input-border-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    border-radius: 8px;
+    padding: 0 1.5rem;
+    opacity: 0.8;
+    background: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.25)
+    );
+    backdrop-filter: blur(2rem);
+    position: relative;
+
+    &::after {
+      content: "";
+      inset: 0;
+      pointer-events: none;
+      position: absolute;
+      border: 0.2rem solid var(--primary);
+      border-radius: 8px;
+      mask-image: linear-gradient(-45deg, black, transparent 20%);
+    }
+
+    @include mq(md) {
+      width: 51%;
+      max-width: 400px;
+    }
+
+    textarea {
+      height: 14rem;
+      resize: none;
+      margin: 0rem;
+    }
+
+    .circle-button {
+      width: 5rem;
+      height: 5rem;
+      background: var(--primary);
+      position: absolute;
+      border-radius: 50%;
+      bottom: 3rem;
+      right: 2.5rem;
+
+      img {
+        width: 2rem;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .circle-parent {
+    .position-1 {
+      width: 4rem;
+      height: 4rem;
+      top: 21rem;
+      right: 7rem;
+
+      @include mq(md) {
+        right: 5%;
+      }
+    }
+
+    .position-3 {
+      width: 2rem;
+      height: 2rem;
+      top: 18rem;
+      right: 13rem;
+
+      @include mq(md) {
+        right: 10%;
+        top: 17rem;
+      }
+    }
+
+    .position-2 {
+      width: 3.8rem;
+      height: 3.8rem;
+      left: 25%;
+      top: 34rem;
+      z-index: -1;
+
+      @include mq(md) {
+        top: 10rem;
+        left: 71%;
+      }
+    }
+
+    .position-4 {
+      width: 3.6rem;
+      height: 3.6rem;
+      right: 19%;
+      z-index: -1;
+      bottom: 1.3rem;
+
+      @include mq(md) {
+        bottom: 9.3rem;
+        right: 23%;
+      }
+    }
+  }
+}
+
+.social-media {
+  padding: 1.4rem 5rem;
+  border: 0.1rem solid var(--white);
+  border-radius: 6rem;
+  margin-block: 3rem 1rem;
+  max-width: 550px;
+  margin-inline: auto;
+
+  @include mq(md) {
+    padding-inline: 15rem;
+  }
+
+  a {
+    display: inline-block;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}
+
+.bottom-shape {
+  .back-infinity {
+    bottom: 0;
+    object-fit: contain;
+    position: absolute;
+    object-position: bottom;
+    right: -2rem;
+    width: 50rem;
+    height: 50rem;
+    z-index: -1;
+    transform: translateX(50%) translateY(8rem);
+    filter: blur(1.5rem);
+    bottom: -10rem;
+
+    @include mq(md) {
+      width: 60%;
+      right: -4rem;
+      bottom: 0rem;
+      aspect-ratio: 1/1;
+      height: auto;
+    }
+  }
+
+  .bottom-orange-shape {
+    filter: blur(10.18rem);
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    mix-blend-mode: difference;
+    z-index: -2;
+
+    @include mq(md) {
+      width: 60%;
+    }
+  }
+}

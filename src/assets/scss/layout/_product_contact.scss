@@ -1,0 +1,48 @@
+@use "../config" as *;
+
+.sub-product-form {
+  padding: 1rem 3rem 3rem;
+  padding-top: 5rem;
+  position: relative;
+  --input-bg: rgba(0, 0, 0, 0.1);
+  --input-border-color: transparent;
+  --btn-bg: var(--theme-color, #1371ff);
+  overflow: hidden;
+  isolation: isolate;
+
+  form {
+    margin-bottom: 7rem;
+    max-width: 50rem;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  .title {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    font-weight: 500;
+  }
+
+  .highlight {
+    color: var(--theme-color, #1371ff);
+  }
+
+  .bottom-shape {
+    position: absolute;
+    bottom: -4rem;
+    left: 0;
+    z-index: -1;
+    filter: blur(4rem);
+
+    @include mq(md) {
+      filter: blur(8rem);
+      height: 40rem;
+      aspect-ratio: 1/1;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
