@@ -8,15 +8,20 @@ export const fetchData = async () => {
   }
 };
 // Function to check if all elements of arr2 are present in array
-const checkElements = (arr1, arr2) => {
-  for (const element of arr2) {
-    if (!arr1.includes(element)) {
-      return false;
+export const checkElements = (arr1, arr2) => {
+  let a = false;
+  arr1.forEach((arr) => {
+    if (arr2.includes(arr)) {
+      a = true;
     }
-  }
-  return true;
+  });
+  arr2.forEach((arr) => {
+    if (arr1.includes(arr)) {
+      a = true;
+    }
+  });
+  return a;
 };
-
 export const filteredWatches = (watches, filters) => {
   // Destructure filter criteria from the filters object
   const {
@@ -47,8 +52,7 @@ export const filteredWatches = (watches, filters) => {
       return false;
     }
     // Filter by size
-    const allElementsPresent = checkElements(size, watch.size);
-    if (allElementsPresent) {
+    if (size.length > 0 && !checkElements(size, watch.size)) {
       return false;
     }
     // Filter by style

@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   brand: [],
   priceRange: { min: 0, max: Infinity },
-  size: [],
+  size: [36],
   style: [],
   dialColor: [],
   strapColor: [],
@@ -18,9 +18,6 @@ const filtersSlice = createSlice({
   name: "filters",
   initialState,
   reducers: {
-    resetFilters() {
-      return initialState;
-    },
     setBrandFilter(state, action) {
       console.log(action);
       const { name, value } = action.payload;
@@ -50,10 +47,11 @@ const filtersSlice = createSlice({
     },
     setSizeFilter(state, action) {
       const { name, value } = action.payload;
+      console.log(state.size, action.payload);
       if (value) {
-        state.size.push(name);
+        state.size.push(+name);
       } else {
-        const index = state.size.indexOf(name);
+        const index = state.size.indexOf(+name);
         if (index > -1) {
           state.size.splice(index, 1);
         }
@@ -149,9 +147,10 @@ const filtersSlice = createSlice({
       }
     },
     setPurchaseYearFilter(state, action) {
+      console.log(action.payload);
       const { name, value } = action.payload;
       if (value) {
-        state.purchaseYear.push(name);
+        state.purchaseYear.push(+name);
       } else {
         const index = state.purchaseYear.indexOf(name);
         if (index > -1) {

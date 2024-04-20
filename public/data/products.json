@@ -952,7 +952,7 @@
     },
     {
       "id": 26,
-      "brand": "Casio G-Shock",
+      "brand": "Casio",
       "name": "Casio G-Shock GA2100-4A Analog-Digital Watch",
       "price": 150,
       "badge": [
@@ -1066,7 +1066,7 @@
     },
     {
       "id": 29,
-      "brand": "Casio Pro Trek",
+      "brand": "Casio",
       "name": "Casio Pro Trek PRW-50Y-1ACR Solar-Powered Watch",
       "price": 18000,
       "badge": [
@@ -1104,7 +1104,7 @@
     },
     {
       "id": 30,
-      "brand": "Seiko Prospex",
+      "brand": "Seiko",
       "name": "Seiko Prospex SRPD29 Automatic Dive Watch",
       "price": 25000,
       "badge": [

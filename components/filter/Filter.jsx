@@ -19,9 +19,8 @@ import {
 export const Filter = () => {
   const [filterActive, setFilterActive] = useState(false);
   const watches = useSelector((state) => state.watches.watches);
-  //   const filter = useSelector((state) => state.filters);
   const availableFilters = getAvailableFilterOptions(watches);
-  console.log(availableFilters);
+  const filters = useSelector((state) => state.filters);
   let {
     brands,
     priceRanges,
@@ -55,13 +54,20 @@ export const Filter = () => {
         </button>
 
         {!!sizes && (
-          <FilterItem data={sizes} title="Size" dispatcher={setSizeFilter} />
+          <FilterItem
+            data={sizes}
+            title="Size"
+            dispatcher={setSizeFilter}
+            className="size"
+            activeFilters={filters.size}
+          />
         )}
         {!!availabilities && (
           <FilterItem
             data={availabilities}
             title="Availability"
             dispatcher={setAvailabilityFilter}
+            activeFilters={filters.availability}
           />
         )}
         {!!genders && (
@@ -69,6 +75,7 @@ export const Filter = () => {
             data={genders}
             title="Gender"
             dispatcher={setGenderFilter}
+            activeFilters={filters.gender}
           />
         )}
         {!!brands && (
@@ -76,6 +83,7 @@ export const Filter = () => {
             data={brands}
             title="Brands"
             dispatcher={setBrandFilter}
+            activeFilters={filters.brand}
           />
         )}
         {!!priceRanges && <FilterItem data={priceRanges} title="Price" />}
@@ -85,6 +93,7 @@ export const Filter = () => {
             data={dialColors}
             title="Dial Color"
             dispatcher={setDialColorFilter}
+            activeFilters={filters.dialColor}
           />
         )}
         {!!styles && (
@@ -95,6 +104,7 @@ export const Filter = () => {
             data={strapColors}
             title="Strap Color"
             dispatcher={setStrapColorFilter}
+            activeFilters={filters.strapColor}
           />
         )}
 
@@ -103,6 +113,7 @@ export const Filter = () => {
             data={movementTypes}
             title="Movement Type"
             dispatcher={setMovementTypeFilter}
+            activeFilters={filters.movementType}
           />
         )}
         {!!caseMaterials && (
@@ -110,6 +121,7 @@ export const Filter = () => {
             data={caseMaterials}
             title="Case Material"
             dispatcher={setCaseMaterialFilter}
+            activeFilters={filters.caseMaterial}
           />
         )}
 
@@ -118,6 +130,7 @@ export const Filter = () => {
             data={purchaseYears}
             title="Purchase Year"
             dispatcher={setPurchaseYearFilter}
+            activeFilters={filters.purchaseYear}
           />
         )}
       </div>

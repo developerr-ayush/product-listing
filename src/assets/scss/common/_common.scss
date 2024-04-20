@@ -54,12 +54,16 @@ img {
   }
 }
 .product-list {
-  display: flex;
   padding: 1rem;
   @include mq(md) {
+    display: flex;
+    align-items: flex-start;
     .filter {
       width: 30rem;
       flex-shrink: 0;
+    }
+    .card-list {
+      flex: 1;
     }
   }
 }

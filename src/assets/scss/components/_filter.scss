@@ -127,5 +127,18 @@
         display: block;
       }
     }
+    &-size {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.5rem;
+        li {
+          border: 0.1rem dashed;
+        }
+      }
+      label {
+        padding-inline: 1rem;
+      }
+    }
   }
 }
