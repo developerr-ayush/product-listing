@@ -1,10 +1,11 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { getAvailableFilterOptions } from "../../redux/action";
 import { LuListFilter } from "react-icons/lu";
 import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { FilterItem } from "./FilterItem";
 import {
+  reset,
   setAvailabilityFilter,
   setBrandFilter,
   setCaseMaterialFilter,
@@ -17,6 +18,7 @@ import {
   setStyleFilter,
 } from "../../redux/watches/filtersSlice";
 export const Filter = () => {
+  const dispatch = useDispatch();
   const [filterActive, setFilterActive] = useState(false);
   const watches = useSelector((state) => state.watches.watches);
   const availableFilters = getAvailableFilterOptions(watches);
@@ -42,7 +44,9 @@ export const Filter = () => {
           <LuListFilter />
           Filter
         </p>
-        <button>Clear All</button>
+        <button className="close" onClick={() => dispatch(reset())}>
+          Clear All
+        </button>
       </div>
       <button className="filter-btn" onClick={() => setFilterActive(true)}>
         <LuListFilter />

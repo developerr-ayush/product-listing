@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 const initailState = {
-  sortBy: "priceLowToHigh",
+  sortBy: "newest",
 };
 const sortSlice = createSlice({
   name: "sort",
@@ -12,3 +12,4 @@ const sortSlice = createSlice({
   },
 });
 export const { setSortBy } = sortSlice.actions;
+export default sortSlice.reducer;

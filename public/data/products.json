@@ -361,7 +361,7 @@
           "url": "icons/editor-choice.png"
         }
       ],
-      "discountedPrice": 0,
+      "discountedPrice": 25000,
       "discountPercent": 0,
       "images": [
         "/img/watches/seiko-watch.jpg",
@@ -374,7 +374,7 @@
       "dialColor": "Blue",
       "strapColor": "Silver",
       "gender": "male",
-      "availability": "Available",
+      "availability": "Sold out",
       "emi": false,
       "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
@@ -399,7 +399,7 @@
           "url": "icons/editor-choice.png"
         }
       ],
-      "discountedPrice": 0,
+      "discountedPrice": 250,
       "discountPercent": 0,
       "images": [
         "/img/watches/citizen-watch.jpg",
@@ -475,7 +475,7 @@
           "url": "icons/editor-choice.png"
         }
       ],
-      "discountedPrice": 0,
+      "discountedPrice": 7000,
       "discountPercent": 0,
       "images": [
         "/img/watches/swatch-watch.jpg",
@@ -526,7 +526,7 @@
       "dialColor": "Silver",
       "strapColor": "Silver",
       "gender": "female",
-      "availability": "Available",
+      "availability": "Sold out",
       "emi": false,
       "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
@@ -792,7 +792,7 @@
       "dialColor": "Silver",
       "strapColor": "Silver",
       "gender": "male",
-      "availability": "Available",
+      "availability": "Sold out",
       "emi": false,
       "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
@@ -969,7 +969,7 @@
           "url": "icons/editor-choice.png"
         }
       ],
-      "discountedPrice": 0,
+      "discountedPrice": 150,
       "discountPercent": 0,
       "images": [
         "/img/watches/casio-g-shock-watch.jpg",

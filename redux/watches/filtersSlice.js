@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   brand: [],
   priceRange: { min: 0, max: Infinity },
-  size: [36],
+  size: [],
   style: [],
   dialColor: [],
   strapColor: [],
@@ -113,17 +113,6 @@ const filtersSlice = createSlice({
         }
       }
     },
-    setEMIAvailabilityFilter(state, action) {
-      const { name, value } = action.payload;
-      if (value) {
-        state.EMIAvailability.push(name);
-      } else {
-        const index = state.EMIAvailability.indexOf(name);
-        if (index > -1) {
-          state.EMIAvailability.splice(index, 1);
-        }
-      }
-    },
     setMovementTypeFilter(state, action) {
       const { name, value } = action.payload;
       if (value) {
@@ -158,6 +147,20 @@ const filtersSlice = createSlice({
         }
       }
     },
+    reset(state) {
+      console.log("dsfkdsl");
+      state.brand = [];
+      state.priceRange = { min: 0, max: Infinity };
+      state.size = [];
+      state.style = [];
+      state.dialColor = [];
+      state.strapColor = [];
+      state.gender = [];
+      state.availability = [];
+      state.movementType = [];
+      state.caseMaterial = [];
+      state.purchaseYear = [];
+    },
   },
 });
 
@@ -175,6 +178,7 @@ export const {
   setMovementTypeFilter,
   setCaseMaterialFilter,
   setPurchaseYearFilter,
+  reset,
 } = filtersSlice.actions;
 
 export default filtersSlice.reducer;

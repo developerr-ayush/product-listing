@@ -11,7 +11,7 @@ export const CardFooter = ({ emi, likes }) => {
         </div>
       )}
       <div className="card-footer-bottom">
-        <img src="/icons/rocket.png" alt="rocket" />
+        <img loading="lazy" src="/icons/rocket.png" alt="rocket" />
         <Like likes={likes} />
       </div>
     </div>

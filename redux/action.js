@@ -92,6 +92,28 @@ export const filteredWatches = (watches, filters) => {
     return true;
   });
 };
+export const sortedWatches = (watches, sortCriteria) => {
+  // Destructure sort criteria from the sortCriteria object
+  const { sortBy } = sortCriteria;
+
+  // Sort watches based on the sort criteria
+  return watches.sort((watch1, watch2) => {
+    if (sortBy === "priceLowToHigh") {
+      return watch1.discountedPrice - watch2.discountedPrice;
+    }
+    if (sortBy === "priceHighToLow") {
+      return watch2.discountedPrice - watch1.discountedPrice;
+    }
+    if (sortBy === "discount") {
+      return watch2.discountPercent - watch1.discountPercent;
+    }
+    if (sortBy === "newest") {
+      return watch2.purchaseYear - watch1.purchaseYear;
+    }
+
+    return watches;
+  });
+};
 export const getAvailableFilterOptions = (watches) => {
   const availableOptions = {
     brands: [],

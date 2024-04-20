@@ -12,11 +12,11 @@ export const Like = ({ likes }) => {
         onClick={() => setIsLiked(!isLiked)}
       >
         {isLiked ? (
-          <img src="/icons/heart.png" alt="like" />
+          <img loading="lazy" src="/icons/heart.png" alt="like" />
         ) : (
           <div className="not-liked">
-            <img src="/icons/heart-outline.png" alt="heart" />
-            <img src="/icons/heart.png" alt="heart" />
+            <img loading="lazy" src="/icons/heart-outline.png" alt="heart" />
+            <img loading="lazy" src="/icons/heart.png" alt="heart" />
           </div>
         )}
         <p> {likes + (isLiked ? 1 : 0)} Likes</p>

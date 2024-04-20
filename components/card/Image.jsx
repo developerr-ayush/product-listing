@@ -1,10 +1,18 @@
 import PropTypes from "prop-types";
 
 export const Image = ({ url, alt, hoverUrl }) => {
-  if (!hoverUrl) return <img src={url} alt={alt} className="card-img" />;
+  if (!hoverUrl)
+    return <img loading="lazy" src={url} alt={alt} className="card-img" />;
   return (
     <div className="card-image">
-      <img src={url} alt={alt} className="card-img" width={100} height={100} />
+      <img
+        loading="lazy"
+        src={url}
+        alt={alt}
+        className="card-img"
+        width={100}
+        height={100}
+      />
       <img
         src={hoverUrl}
         alt={alt}
