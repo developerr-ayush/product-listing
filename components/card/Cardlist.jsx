@@ -11,7 +11,6 @@ export const Cardlist = ({ products }) => {
   const filteredProducts = filteredWatches(products, filter);
   const sortData = sortedWatches(filteredProducts, sort);
   let showBanner = [6, 12];
-  console.log(sortData);
   return (
     <div className="card-list">
       <Sort />

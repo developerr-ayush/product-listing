@@ -19,7 +19,6 @@ const filtersSlice = createSlice({
   initialState,
   reducers: {
     setBrandFilter(state, action) {
-      console.log(action);
       const { name, value } = action.payload;
       if (value) {
         state.brand.push(name);
@@ -47,7 +46,6 @@ const filtersSlice = createSlice({
     },
     setSizeFilter(state, action) {
       const { name, value } = action.payload;
-      console.log(state.size, action.payload);
       if (value) {
         state.size.push(+name);
       } else {
@@ -91,7 +89,6 @@ const filtersSlice = createSlice({
       }
     },
     setGenderFilter(state, action) {
-      console.log(action);
       const { name, value } = action.payload;
       if (value) {
         state.gender.push(name);
@@ -136,7 +133,6 @@ const filtersSlice = createSlice({
       }
     },
     setPurchaseYearFilter(state, action) {
-      console.log(action.payload);
       const { name, value } = action.payload;
       if (value) {
         state.purchaseYear.push(+name);
@@ -148,7 +144,6 @@ const filtersSlice = createSlice({
       }
     },
     reset(state) {
-      console.log("dsfkdsl");
       state.brand = [];
       state.priceRange = { min: 0, max: Infinity };
       state.size = [];
