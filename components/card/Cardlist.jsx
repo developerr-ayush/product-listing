@@ -7,11 +7,12 @@ export const Cardlist = ({ products }) => {
   const filter = useSelector((state) => state.filters);
   if (!products) return null;
   const filteredProducts = filteredWatches(products, filter);
+  let showBanner = [6, 12];
   console.log(filteredProducts);
   return (
     <div className="card-list">
       {filteredProducts.map((product, index) => {
-        if (index === 6) {
+        if (showBanner.includes(index + 1)) {
           return (
             <>
               <div className="card-list-ad">

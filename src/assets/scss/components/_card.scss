@@ -3,6 +3,9 @@
   padding: 1rem;
   border: 0.1rem solid var(--gray);
   border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+
   &-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,6 +128,7 @@
     }
   }
   &-footer {
+    margin-top: auto;
     &-top {
       text-align: center;
       p {

@@ -15,18 +15,23 @@ export const CardData = ({
       <div className="card-data-price">
         <p className="card-price-wrap">
           <span className="card-price">
-            {discountedPrice.toLocaleString("EN-IN", {
-              style: "currency",
-              currency: "INR",
-            })}
+            {discountedPrice
+              ? discountedPrice.toLocaleString("EN-IN", {
+                  style: "currency",
+                  currency: "INR",
+                })
+              : price.toLocaleString("EN-IN", {
+                  style: "currency",
+                  currency: "INR",
+                })}
           </span>
-          {!!discountPercent && (
+          {!!discountedPrice && (
             <span className="card-discount-percent">
               {discountPercent}% Off
             </span>
           )}
         </p>
-        {!!price && (
+        {!!discountedPrice && (
           <p className="card-discount-price">
             {price.toLocaleString("EN-IN", {
               style: "currency",
