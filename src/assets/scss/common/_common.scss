@@ -53,44 +53,13 @@ img {
     display: block;
   }
 }
-
-svg {
-  width: 100%;
-}
-
-.top-shape {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 73%;
-  height: 100vh;
-  filter: blur(4rem);
-  mix-blend-mode: difference;
-  z-index: -1;
-
+.product-list {
+  display: flex;
+  padding: 1rem;
   @include mq(md) {
-    filter: blur(8rem);
+    .filter {
+      width: 30rem;
+      flex-shrink: 0;
+    }
   }
-}
-
-.heading {
-  font-size: var(--h2);
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-}
-
-.paragraph {
-  text-align: justify;
-}
-
-.highlight {
-  color: var(--primary);
-}
-
-.container-gap {
-  padding-inline: 2rem;
-}
-
-.product-page {
-  margin-top: 20rem;
 }

@@ -8,7 +8,7 @@ export const Image = ({ url, alt, hoverUrl }) => {
       <img
         src={hoverUrl}
         alt={alt}
-        className="card-img-hover"
+        className="card-img card-img-hover"
         width={100}
         height={100}
       />

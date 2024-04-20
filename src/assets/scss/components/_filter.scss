@@ -1,0 +1,131 @@
+@use "../config/" as *;
+.filter {
+  &-head {
+    padding: 0 1rem;
+    display: none;
+    @include mq(lg) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    p {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+    button {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+  &-btn {
+    position: fixed;
+    bottom: calc(3rem + env(safe-area-inset-bottom));
+    width: max-content;
+    inset-inline: 0;
+    margin: auto;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+    z-index: 4;
+  }
+  &-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    @include mq(md) {
+      display: none;
+    }
+  }
+  &-section {
+    position: fixed;
+    background-color: white;
+    z-index: 5;
+    inset: 0;
+    padding-top: 5rem;
+    overflow: auto;
+    display: none;
+    @include mq(md) {
+      display: block;
+      position: relative;
+      padding-top: 1rem;
+    }
+  }
+  &-active {
+    .filter-section {
+      display: block;
+    }
+  }
+  &-item {
+    padding: 1rem 2rem;
+    &-head {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    &-body {
+      display: none;
+      ul {
+        list-style: none;
+        padding: 0;
+        li {
+          padding-block: 0.5rem;
+          border-radius: 0.5rem;
+          font-size: 1.4rem;
+          font-weight: 500;
+          margin-block: 1rem;
+          cursor: pointer;
+          transition: 300ms background-color;
+        }
+      }
+      label {
+        display: flex;
+        gap: 0.5rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+      }
+      input {
+        accent-color: black;
+      }
+    }
+    &-text {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    &-btn {
+      position: relative;
+      width: 1.5rem;
+      height: 1.5rem;
+      &::after,
+      &::before {
+        content: "";
+        width: 100%;
+        height: 0.2rem;
+        background-color: var(--black);
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        transition: 300ms rotate;
+      }
+      &::before {
+        rotate: 90deg;
+      }
+    }
+    &-active {
+      .filter-item-btn::before {
+        rotate: 0deg;
+      }
+      .filter-item-body {
+        display: block;
+      }
+    }
+  }
+}

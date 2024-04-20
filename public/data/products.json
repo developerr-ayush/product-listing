@@ -11,8 +11,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -21,7 +21,10 @@
       ],
       "discountedPrice": 8000,
       "discountPercent": 20,
-      "images": ["/img/rolex-gmt-master.png", "/img/rolex-gmt-master-2.png"],
+      "images": [
+        "/img/watches/rolex-gmt-master.png",
+        "/img/watches/rolex-gmt-master-2.png"
+      ],
       "size": [40, 42, 44, 45],
       "description": "For the first time, the GMT-Master II in Oystersteel is presented with the Cerachrom bezel insert in grey and black ceramic introduced to the range in 2023. Two new versions are offered: one with our Oyster bracelet, the other with our Jubilee bracelet. Their green 24-hour hand displays much more than just an alternative time zone; it points to another location that resonates with the wearer – a reminder of the emotions that accompany each traveller.",
       "likes": 20,
@@ -31,7 +34,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": true,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Rose Gold",
       "purchaseYear": 1998
     },
@@ -46,8 +49,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -56,7 +59,10 @@
       ],
       "discountedPrice": 3384000,
       "discountPercent": 30,
-      "images": ["/img/rolex-submariner.jpg", "/img/rolex-submariner-2.webp"],
+      "images": [
+        "/img/watches/rolex-submariner.jpg",
+        "/img/watches/rolex-submariner-2.webp"
+      ],
       "size": [30, 32, 35, 36],
       "description": "The Submariner's robust and functional design swiftly became iconic. With their subtly redesigned Oyster case, distinctive dial with large luminescent hour markers, graduated rotatable Cerachrom bezel and solid link Oyster bracelet, the latest generation Submariner and Submariner Date are firmly in line with the original model launched in 1953.",
       "likes": 30,
@@ -66,7 +72,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": true,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Rose Gold",
       "purchaseYear": 2010
     },
@@ -81,8 +87,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -91,7 +97,10 @@
       ],
       "discountedPrice": 5995,
       "discountPercent": 25,
-      "images": ["/img/titan-watch.jpg", "/img/titan-watch-2.jpg"],
+      "images": [
+        "/img/watches/titan-watch.jpg",
+        "/img/watches/titan-watch-2.jpg"
+      ],
       "size": [25, 27, 28, 30],
       "description": "This watch is a timeless classic that will never go out of style. It features a white dial with gold-toned hands and markers, a date window at 3 o'clock, and a stainless steel bracelet. The watch is powered by a quartz movement and is water-resistant up to 50 meters.",
       "likes": 10,
@@ -101,7 +110,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": true,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2022
     },
@@ -116,8 +125,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -126,7 +135,10 @@
       ],
       "discountedPrice": 9995,
       "discountPercent": 10,
-      "images": ["/img/casio-watch.jpg", "/img/casio-watch-2.jpg"],
+      "images": [
+        "/img/watches/casio-watch.jpg",
+        "/img/watches/casio-watch-2.jpg"
+      ],
       "size": [40, 45, 47],
       "description": "This watch is a timeless classic that will never go out of style. It features a black dial with silver-toned hands and markers, a date window at 3 o'clock, and a stainless steel bracelet. The watch is powered by a quartz movement and is water-resistant up to 100 meters.",
       "likes": 15,
@@ -136,7 +148,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": true,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2003
     },
@@ -151,8 +163,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -161,7 +173,10 @@
       ],
       "discountedPrice": 11475,
       "discountPercent": 18,
-      "images": ["/img/olevs-watch.jpg", "/img/olevs-watch-2.jpg"],
+      "images": [
+        "/img/watches/olevs-watch.jpg",
+        "/img/watches/olevs-watch-2.jpg"
+      ],
       "size": [37, 41, 43, 45],
       "description": "OLEVS is a brand that is known for its high-quality watches. This watch is no exception. It features a diamond-studded bezel, a skeleton dial, and a tourbillon movement. The watch is self-winding and has a calendar function. It is also water-resistant up to 30 meters.",
       "likes": 25,
@@ -171,7 +186,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": true,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 1995
     },
@@ -186,8 +201,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -196,7 +211,10 @@
       ],
       "discountedPrice": 7220,
       "discountPercent": 15,
-      "images": ["/img/casio-watch-3.jpg", "/img/casio-watch-4.jpg"],
+      "images": [
+        "/img/watches/casio-watch-3.jpg",
+        "/img/watches/casio-watch-4.jpg"
+      ],
       "size": [44, 46, 48],
       "description": "This watch is a timeless classic that will never go out of style. It features a black dial with silver-toned hands and markers, a date window at 3 o'clock, and a stainless steel bracelet. The watch is powered by a quartz movement and is water-resistant up to 100 meters.",
       "likes": 18,
@@ -206,7 +224,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": true,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2013
     },
@@ -221,8 +239,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -231,7 +249,10 @@
       ],
       "discountedPrice": 7999,
       "discountPercent": 20,
-      "images": ["/img/nibosi-watch.jpg", "/img/nibosi-watch-2.jpg"],
+      "images": [
+        "/img/watches/nibosi-watch.jpg",
+        "/img/watches/nibosi-watch-2.jpg"
+      ],
       "size": [20, 22, 24, 26],
       "description": "This watch is a timeless classic that will never go out of style. It features a white dial with gold-toned hands and markers, a date window at 3 o'clock, and a stainless steel bracelet. The watch is powered by a quartz movement and is water-resistant up to 50 meters.",
       "likes": 10,
@@ -241,7 +262,7 @@
       "gender": "female",
       "availability": "Available",
       "emi": true,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2019
     },
@@ -256,8 +277,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -266,7 +287,10 @@
       ],
       "discountedPrice": 11999,
       "discountPercent": 25,
-      "images": ["/img/fossil-watch.jpg", "/img/fossil-watch-2.jpg"],
+      "images": [
+        "/img/watches/fossil-watch.jpg",
+        "/img/watches/fossil-watch-2.jpg"
+      ],
       "size": [26, 28, 30],
       "description": "This watch is a timeless classic that will never go out of style. It features a white dial with gold-toned hands and markers, a date window at 3 o'clock, and a stainless steel bracelet. The watch is powered by a quartz movement and is water-resistant up to 50 meters.",
       "likes": 10,
@@ -276,7 +300,7 @@
       "gender": "female",
       "availability": "Available",
       "emi": true,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 1992
     },
@@ -291,8 +315,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -301,7 +325,10 @@
       ],
       "discountedPrice": 9999,
       "discountPercent": 23,
-      "images": ["/img/fossil-watch-3.jpg", "/img/fossil-watch-4.jpg"],
+      "images": [
+        "/img/watches/fossil-watch-3.jpg",
+        "/img/watches/fossil-watch-4.jpg"
+      ],
       "size": [44],
       "description": "This watch is a timeless classic that will never go out of style. It features a blue dial with silver-toned hands and markers, a date window at 3 o'clock, and a leather strap. The watch is powered by a quartz movement and is water-resistant up to 50 meters.",
       "likes": 15,
@@ -311,7 +338,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": true,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Aluminium",
       "purchaseYear": 2009
     },
@@ -326,8 +353,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -336,7 +363,10 @@
       ],
       "discountedPrice": 0,
       "discountPercent": 0,
-      "images": ["/img/seiko-watch.jpg", "/img/seiko-watch-2.jpg"],
+      "images": [
+        "/img/watches/seiko-watch.jpg",
+        "/img/watches/seiko-watch-2.jpg"
+      ],
       "size": [42, 44],
       "description": "A casual watch with a blue dial and a stainless steel strap, featuring an automatic movement.",
       "likes": 15,
@@ -346,7 +376,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2020
     },
@@ -361,8 +391,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -371,7 +401,10 @@
       ],
       "discountedPrice": 0,
       "discountPercent": 0,
-      "images": ["/img/citizen-watch.jpg", "/img/citizen-watch-2.jpg"],
+      "images": [
+        "/img/watches/citizen-watch.jpg",
+        "/img/watches/citizen-watch-2.jpg"
+      ],
       "size": [38],
       "description": "A rugged field watch with a black dial and a canvas strap, featuring Citizen's Eco-Drive technology.",
       "likes": 12,
@@ -381,7 +414,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Solar",
+      "movementType": "Solar",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2005
     },
@@ -396,8 +429,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -406,7 +439,10 @@
       ],
       "discountedPrice": 5999,
       "discountPercent": 20,
-      "images": ["/img/timex-watch.jpg", "/img/timex-watch-2.jpg"],
+      "images": [
+        "/img/watches/timex-watch.jpg",
+        "/img/watches/timex-watch-2.jpg"
+      ],
       "size": [40],
       "description": "A versatile chronograph watch with a white dial and interchangeable nylon straps.",
       "likes": 8,
@@ -416,7 +452,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2017
     },
@@ -431,8 +467,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -441,7 +477,10 @@
       ],
       "discountedPrice": 0,
       "discountPercent": 0,
-      "images": ["/img/swatch-watch.jpg", "/img/swatch-watch-2.jpg"],
+      "images": [
+        "/img/watches/swatch-watch.jpg",
+        "/img/watches/swatch-watch-2.jpg"
+      ],
       "size": [36],
       "description": "A bold and colorful watch with a blue dial and plastic case, featuring quartz movement.",
       "likes": 20,
@@ -451,7 +490,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Plastic",
       "purchaseYear": 2001
     },
@@ -466,8 +505,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -476,7 +515,10 @@
       ],
       "discountedPrice": 33999,
       "discountPercent": 5,
-      "images": ["/img/tissot-watch.png", "/img/tissot-watch-2.jpg"],
+      "images": [
+        "/img/watches/tissot-watch.png",
+        "/img/watches/tissot-watch-2.jpg"
+      ],
       "size": [38],
       "description": "A sleek and elegant watch with a silver dial and stainless steel bracelet, featuring quartz movement.",
       "likes": 25,
@@ -486,7 +528,7 @@
       "gender": "female",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2011
     },
@@ -501,8 +543,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -511,7 +553,10 @@
       ],
       "discountedPrice": 80999,
       "discountPercent": 9,
-      "images": ["/img/tag-heuer-watch.jpg", "/img/tag-heuer-watch-2.jpg"],
+      "images": [
+        "/img/watches/tag-heuer-watch.jpg",
+        "/img/watches/tag-heuer-watch-2.jpg"
+      ],
       "size": [42],
       "description": "A sporty chronograph watch with a black dial and stainless steel bracelet, featuring quartz movement.",
       "likes": 30,
@@ -521,7 +566,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2023
     },
@@ -536,8 +581,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -546,7 +591,10 @@
       ],
       "discountedPrice": 67999,
       "discountPercent": 1,
-      "images": ["/img/bulova-watch.jpg", "/img/bulova-watch-2.jpg"],
+      "images": [
+        "/img/watches/bulova-watch.jpg",
+        "/img/watches/bulova-watch-2.jpg"
+      ],
       "size": [40],
       "description": "A precisionist chronograph watch with a black dial and stainless steel bracelet, featuring quartz movement.",
       "likes": 18,
@@ -556,7 +604,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2007
     },
@@ -571,8 +619,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -581,7 +629,10 @@
       ],
       "discountedPrice": 754932,
       "discountPercent": 5,
-      "images": ["/img/hamilton-watch.jpg", "/img/hamilton-watch-2.jpg"],
+      "images": [
+        "/img/watches/hamilton-watch.jpg",
+        "/img/watches/hamilton-watch-2.jpg"
+      ],
       "size": [42],
       "description": "A rugged field watch with a black dial and canvas strap, featuring an automatic movement.",
       "likes": 22,
@@ -591,7 +642,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2015
     },
@@ -606,8 +657,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -616,7 +667,10 @@
       ],
       "discountedPrice": 19999,
       "discountPercent": 20,
-      "images": ["/img/orient-watch.jpg", "/img/orient-watch-2.jpg"],
+      "images": [
+        "/img/watches/orient-watch.jpg",
+        "/img/watches/orient-watch-2.jpg"
+      ],
       "size": [38],
       "description": "A classic dress watch with a white dial and leather strap, featuring an automatic movement.",
       "likes": 15,
@@ -626,7 +680,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2006
     },
@@ -641,8 +695,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -651,7 +705,10 @@
       ],
       "discountedPrice": 7888,
       "discountPercent": 11,
-      "images": ["/img/g-shock-watch.jpg", "/img/g-shock-watch-2.jpg"],
+      "images": [
+        "/img/watches/g-shock-watch.jpg",
+        "/img/watches/g-shock-watch-2.jpg"
+      ],
       "size": [45],
       "description": "A rugged and versatile watch with analog-digital display and black resin strap.",
       "likes": 28,
@@ -661,7 +718,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Resin",
       "purchaseYear": 2004
     },
@@ -676,8 +733,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -687,8 +744,8 @@
       "discountedPrice": 2695,
       "discountPercent": 10,
       "images": [
-        "/img/casio-vintage-watch.jpg",
-        "/img/casio-vintage-watch-2.jpg"
+        "/img/watches/casio-vintage-watch.jpg",
+        "/img/watches/casio-vintage-watch-2.jpg"
       ],
       "size": [36],
       "description": "A retro-inspired digital watch with a silver-tone case and stainless steel bracelet.",
@@ -699,7 +756,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2014
     },
@@ -714,8 +771,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -724,7 +781,10 @@
       ],
       "discountedPrice": 3199999,
       "discountPercent": 11,
-      "images": ["/img/longines-watch.jpg", "/img/longines-watch-2.jpg"],
+      "images": [
+        "/img/watches/longines-watch.jpg",
+        "/img/watches/longines-watch-2.jpg"
+      ],
       "size": [40],
       "description": "An elegant dress watch with a silver dial and stainless steel bracelet, featuring an automatic movement.",
       "likes": 35,
@@ -734,7 +794,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2016
     },
@@ -749,8 +809,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -759,7 +819,10 @@
       ],
       "discountedPrice": 15599,
       "discountPercent": 18,
-      "images": ["/img/fossil-smartwatch.jpg", "/img/fossil-smartwatch-2.jpg"],
+      "images": [
+        "/img/watches/fossil-smartwatch.jpg",
+        "/img/watches/fossil-smartwatch-2.jpg"
+      ],
       "size": [42],
       "description": "A smartwatch with touchscreen display, heart rate monitor, and various fitness tracking features.",
       "likes": 25,
@@ -769,7 +832,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Smart",
+      "movementType": "Smart",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2018
     },
@@ -784,8 +847,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -794,7 +857,10 @@
       ],
       "discountedPrice": 33099,
       "discountPercent": 13,
-      "images": ["/img/garmin-watch.jpg", "/img/garmin-watch-2.jpg"],
+      "images": [
+        "/img/watches/garmin-watch.jpg",
+        "/img/watches/garmin-watch-2.jpg"
+      ],
       "size": [38],
       "description": "A GPS running watch with heart rate monitor, activity tracking, and smartphone notifications.",
       "likes": 30,
@@ -804,7 +870,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Smart",
+      "movementType": "Smart",
       "caseMaterial": "Plastic",
       "purchaseYear": 2002
     },
@@ -819,8 +885,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -829,7 +895,10 @@
       ],
       "discountedPrice": 10999,
       "discountPercent": 48,
-      "images": ["/img/samsung-watch.jpg", "/img/samsung-watch-2.jpg"],
+      "images": [
+        "/img/watches/samsung-watch.jpg",
+        "/img/watches/samsung-watch-2.jpg"
+      ],
       "size": [42],
       "description": "A smartwatch with rotating bezel, AMOLED display, and various health and fitness tracking features.",
       "likes": 40,
@@ -839,7 +908,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Smart",
+      "movementType": "Smart",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2021
     },
@@ -854,8 +923,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -864,7 +933,10 @@
       ],
       "discountedPrice": 47999,
       "discountPercent": 6,
-      "images": ["/img/apple-watch.jpg", "/img/apple-watch-2.jpg"],
+      "images": [
+        "/img/watches/apple-watch.jpg",
+        "/img/watches/apple-watch-2.jpg"
+      ],
       "size": [40],
       "description": "A smartwatch with touchscreen display, ECG, blood oxygen monitoring, and fitness tracking features.",
       "likes": 50,
@@ -874,7 +946,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Smart",
+      "movementType": "Smart",
       "caseMaterial": "Aluminium",
       "purchaseYear": 1999
     },
@@ -889,8 +961,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -900,8 +972,8 @@
       "discountedPrice": 0,
       "discountPercent": 0,
       "images": [
-        "/img/casio-g-shock-watch.jpg",
-        "/img/casio-g-shock-watch-2.jpg"
+        "/img/watches/casio-g-shock-watch.jpg",
+        "/img/watches/casio-g-shock-watch-2.jpg"
       ],
       "size": [46],
       "description": "A rugged analog-digital watch with red accents and black resin strap.",
@@ -912,7 +984,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Resin",
       "purchaseYear": 2008
     },
@@ -927,8 +999,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -938,8 +1010,8 @@
       "discountedPrice": 89999,
       "discountPercent": 10,
       "images": [
-        "/img/timex-ironman-watch.jpg",
-        "/img/timex-ironman-watch-2.jpg"
+        "/img/watches/timex-ironman-watch.jpg",
+        "/img/watches/timex-ironman-watch-2.jpg"
       ],
       "size": [42],
       "description": "A durable digital sports watch with stopwatch, countdown timer, and Indiglo backlight.",
@@ -950,7 +1022,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Resin",
       "purchaseYear": 2024
     },
@@ -965,8 +1037,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -975,7 +1047,10 @@
       ],
       "discountedPrice": 28888,
       "discountPercent": 10,
-      "images": ["/img/suunto-watch.jpg", "/img/suunto-watch-2.jpg"],
+      "images": [
+        "/img/watches/suunto-watch.jpg",
+        "/img/watches/suunto-watch-2.jpg"
+      ],
       "size": [46],
       "description": "A rugged outdoor watch with altimeter, barometer, compass, and weather functions.",
       "likes": 30,
@@ -985,7 +1060,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Quartz",
+      "movementType": "Quartz",
       "caseMaterial": "Plastic",
       "purchaseYear": 1996
     },
@@ -1000,8 +1075,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -1011,8 +1086,8 @@
       "discountedPrice": 16999,
       "discountPercent": 6,
       "images": [
-        "/img/casio-pro-trek-watch.jpg",
-        "/img/casio-pro-trek-watch-2.jpg"
+        "/img/watches/casio-pro-trek-watch.jpg",
+        "/img/watches/casio-pro-trek-watch-2.jpg"
       ],
       "size": [46],
       "description": "A solar-powered outdoor watch with altimeter, barometer, compass, and GPS functions.",
@@ -1023,7 +1098,7 @@
       "gender": "unisex",
       "availability": "Available",
       "emi": false,
-      "momentType": "Solar",
+      "movementType": "Solar",
       "caseMaterial": "Plastic",
       "purchaseYear": 1991
     },
@@ -1038,8 +1113,8 @@
           "url": "icons/new.png"
         },
         {
-          "text": "Sale",
-          "url": "icons/sale.png"
+          "text": "Top Rated",
+          "url": "icons/top-rated.png"
         },
         {
           "text": "Editors Choice",
@@ -1049,8 +1124,8 @@
       "discountedPrice": 22999,
       "discountPercent": 8,
       "images": [
-        "/img/seiko-prospex-watch.jpg",
-        "/img/seiko-prospex-watch-2.jpg"
+        "/img/watches/seiko-prospex-watch.jpg",
+        "/img/watches/seiko-prospex-watch-2.jpg"
       ],
       "size": [44],
       "description": "A rugged dive watch with black dial and stainless steel bracelet, featuring an automatic movement.",
@@ -1061,7 +1136,7 @@
       "gender": "male",
       "availability": "Available",
       "emi": false,
-      "momentType": "Automatic",
+      "movementType": "Automatic",
       "caseMaterial": "Stainless Steel",
       "purchaseYear": 2000
     }
