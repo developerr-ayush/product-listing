@@ -5,6 +5,20 @@
       "brand": "Rolex",
       "name": "GMT‑Master II",
       "price": 10000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 8000,
       "discountPercent": 20,
       "images": ["/img/rolex-gmt-master.png", "/img/rolex-gmt-master-2.png"],
@@ -26,6 +40,20 @@
       "brand": "Rolex",
       "name": "Rolex Submariner Date Green Dial Oystersteel Men'S Watch 116610Lv-0002",
       "price": 4972500,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 3384000,
       "discountPercent": 30,
       "images": ["/img/rolex-submariner.jpg", "/img/rolex-submariner-2.webp"],
@@ -47,6 +75,20 @@
       "brand": "Titan",
       "name": "Titan White Dial Analog Watch For Men - NR1927YM05",
       "price": 7995,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 5995,
       "discountPercent": 25,
       "images": ["/img/titan-watch.jpg", "/img/titan-watch-2.jpg"],
@@ -68,6 +110,20 @@
       "brand": "Casio",
       "name": "Casio Edifice Analog Black Dial Silver Band Stainless Steel Men Watch EF-539D-1AVDF (ED369)",
       "price": 10995,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 9995,
       "discountPercent": 10,
       "images": ["/img/casio-watch.jpg", "/img/casio-watch-2.jpg"],
@@ -89,6 +145,20 @@
       "brand": "OLEVS",
       "name": "OLEVS Automatic Watches for Men Diamond Skeleton Mechanical Tourbillon Self Winding Luxury Dress Wrist Watches Calendar Luminous Waterproof",
       "price": 14000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 11475,
       "discountPercent": 18,
       "images": ["/img/olevs-watch.jpg", "/img/olevs-watch-2.jpg"],
@@ -110,6 +180,20 @@
       "brand": "Casio",
       "name": "Casio Edifice Analog Black Dial and Band Stainless Steel Men Watch EFR-526D-1AVUDF ( EX093 )",
       "price": 8495,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 7220,
       "discountPercent": 15,
       "images": ["/img/casio-watch-3.jpg", "/img/casio-watch-4.jpg"],
@@ -131,6 +215,20 @@
       "brand": "NIBOSI",
       "name": "NIBOSI Women Watches Analog White Dail Wrist Watches Luxury Roman Numerals Watches for Women&Ladies&Girls Diamond Studded Waterproof Watches",
       "price": 9999,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 7999,
       "discountPercent": 20,
       "images": ["/img/nibosi-watch.jpg", "/img/nibosi-watch-2.jpg"],
@@ -152,6 +250,20 @@
       "brand": "Fossil",
       "name": "Raquel Three-Hand Date Two-Tone Stainless Steel Watch",
       "price": 15999,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 11999,
       "discountPercent": 25,
       "images": ["/img/fossil-watch.jpg", "/img/fossil-watch-2.jpg"],
@@ -173,6 +285,20 @@
       "brand": "Fossil",
       "name": "Grant Sport Chronograph Blue Leather Watch",
       "price": 12999,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 9999,
       "discountPercent": 23,
       "images": ["/img/fossil-watch-3.jpg", "/img/fossil-watch-4.jpg"],
@@ -194,6 +320,20 @@
       "brand": "Seiko",
       "name": "Seiko 5 Automatic Blue Dial Stainless Steel Men's Watch",
       "price": 25000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 0,
       "discountPercent": 0,
       "images": ["/img/seiko-watch.jpg", "/img/seiko-watch-2.jpg"],
@@ -215,6 +355,20 @@
       "brand": "Citizen",
       "name": "Citizen Eco-Drive Chandler Field Watch for Men",
       "price": 250,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 0,
       "discountPercent": 0,
       "images": ["/img/citizen-watch.jpg", "/img/citizen-watch-2.jpg"],
@@ -236,6 +390,20 @@
       "brand": "Timex",
       "name": "Timex Weekender Chronograph Watch",
       "price": 75000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 5999,
       "discountPercent": 20,
       "images": ["/img/timex-watch.jpg", "/img/timex-watch-2.jpg"],
@@ -257,6 +425,20 @@
       "brand": "Swatch",
       "name": "Swatch Originals GN230 Blue Rebel Watch",
       "price": 70,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 0,
       "discountPercent": 0,
       "images": ["/img/swatch-watch.jpg", "/img/swatch-watch-2.jpg"],
@@ -278,6 +460,20 @@
       "brand": "Tissot",
       "name": "Tissot PR 100 Sport Chic Watch",
       "price": 35500,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 33999,
       "discountPercent": 5,
       "images": ["/img/tissot-watch.png", "/img/tissot-watch-2.jpg"],
@@ -299,6 +495,20 @@
       "brand": "Tag Heuer",
       "name": "Tag Heuer Formula 1 Chronograph",
       "price": 88999,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 80999,
       "discountPercent": 9,
       "images": ["/img/tag-heuer-watch.jpg", "/img/tag-heuer-watch-2.jpg"],
@@ -320,6 +530,20 @@
       "brand": "Bulova",
       "name": "Bulova Precisionist Chronograph Watch",
       "price": 68999,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 67999,
       "discountPercent": 1,
       "images": ["/img/bulova-watch.jpg", "/img/bulova-watch-2.jpg"],
@@ -341,6 +565,20 @@
       "brand": "Hamilton",
       "name": "Hamilton Khaki Field Automatic Watch",
       "price": 800000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 754932,
       "discountPercent": 5,
       "images": ["/img/hamilton-watch.jpg", "/img/hamilton-watch-2.jpg"],
@@ -362,6 +600,20 @@
       "brand": "Orient",
       "name": "Orient Bambino Version IV Dress Watch",
       "price": 25000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 19999,
       "discountPercent": 20,
       "images": ["/img/orient-watch.jpg", "/img/orient-watch-2.jpg"],
@@ -383,6 +635,20 @@
       "brand": "G-Shock",
       "name": "G-Shock GA2100-1A1 Analog-Digital Watch",
       "price": 8893,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 7888,
       "discountPercent": 11,
       "images": ["/img/g-shock-watch.jpg", "/img/g-shock-watch-2.jpg"],
@@ -404,6 +670,20 @@
       "brand": "Casio",
       "name": "Casio Vintage A168WA-1 Watch",
       "price": 3000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 2695,
       "discountPercent": 10,
       "images": [
@@ -428,6 +708,20 @@
       "brand": "Longines",
       "name": "Longines Master Collection Automatic Watch",
       "price": 360000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 3199999,
       "discountPercent": 11,
       "images": ["/img/longines-watch.jpg", "/img/longines-watch-2.jpg"],
@@ -449,6 +743,20 @@
       "brand": "Fossil",
       "name": "Fossil Gen 5E Smartwatch",
       "price": 18989,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 15599,
       "discountPercent": 18,
       "images": ["/img/fossil-smartwatch.jpg", "/img/fossil-smartwatch-2.jpg"],
@@ -470,6 +778,20 @@
       "brand": "Garmin",
       "name": "Garmin Forerunner 45 GPS Running Watch",
       "price": 37888,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 33099,
       "discountPercent": 13,
       "images": ["/img/garmin-watch.jpg", "/img/garmin-watch-2.jpg"],
@@ -491,6 +813,20 @@
       "brand": "Samsung",
       "name": "Samsung Galaxy Watch 4 Classic",
       "price": 20999,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 10999,
       "discountPercent": 48,
       "images": ["/img/samsung-watch.jpg", "/img/samsung-watch-2.jpg"],
@@ -512,6 +848,20 @@
       "brand": "Apple",
       "name": "Apple Watch Series 7",
       "price": 50999,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 47999,
       "discountPercent": 6,
       "images": ["/img/apple-watch.jpg", "/img/apple-watch-2.jpg"],
@@ -533,6 +883,20 @@
       "brand": "Casio G-Shock",
       "name": "Casio G-Shock GA2100-4A Analog-Digital Watch",
       "price": 150,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 0,
       "discountPercent": 0,
       "images": [
@@ -557,6 +921,20 @@
       "brand": "Timex",
       "name": "Timex Ironman Classic 30 Full-Size Watch",
       "price": 100000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 89999,
       "discountPercent": 10,
       "images": [
@@ -581,6 +959,20 @@
       "brand": "Suunto",
       "name": "Suunto Core All Black Military Outdoor Watch",
       "price": 32000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 28888,
       "discountPercent": 10,
       "images": ["/img/suunto-watch.jpg", "/img/suunto-watch-2.jpg"],
@@ -602,6 +994,20 @@
       "brand": "Casio Pro Trek",
       "name": "Casio Pro Trek PRW-50Y-1ACR Solar-Powered Watch",
       "price": 18000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 16999,
       "discountPercent": 6,
       "images": [
@@ -626,6 +1032,20 @@
       "brand": "Seiko Prospex",
       "name": "Seiko Prospex SRPD29 Automatic Dive Watch",
       "price": 25000,
+      "badge": [
+        {
+          "text": "New",
+          "url": "icons/new.png"
+        },
+        {
+          "text": "Sale",
+          "url": "icons/sale.png"
+        },
+        {
+          "text": "Editors Choice",
+          "url": "icons/editor-choice.png"
+        }
+      ],
       "discountedPrice": 22999,
       "discountPercent": 8,
       "images": [
