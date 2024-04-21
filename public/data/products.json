@@ -1013,7 +1013,7 @@
         "/img/watches/timex-ironman-watch.jpg",
         "/img/watches/timex-ironman-watch-2.jpg"
       ],
-      "size": [42],
+      "size": [25, 24, 27, 42],
       "description": "A durable digital sports watch with stopwatch, countdown timer, and Indiglo backlight.",
       "likes": 20,
       "style": "Sport",
@@ -1089,7 +1089,7 @@
         "/img/watches/casio-pro-trek-watch.jpg",
         "/img/watches/casio-pro-trek-watch-2.jpg"
       ],
-      "size": [46],
+      "size": [22, 24, 46],
       "description": "A solar-powered outdoor watch with altimeter, barometer, compass, and GPS functions.",
       "likes": 25,
       "style": "Outdoor",

@@ -28,7 +28,7 @@ export const FilterItem = ({
       </button>
       <div className="filter-item-body">
         <ul>
-        {data.map((e, i) => {
+          {data.map((e, i) => {
             return (
               <li key={i}>
                 <label htmlFor={e}>
@@ -72,5 +72,5 @@ FilterItem.propTypes = {
   dispatcher: PropTypes.func.isRequired,
   className: PropTypes.string,
   type: PropTypes.string,
-  activeFilters: PropTypes.array.isRequired,
+  activeFilters: PropTypes.array,
 };

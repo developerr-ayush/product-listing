@@ -37,12 +37,11 @@ export const Filter = () => {
     strapColors,
     styles,
   } = availableFilters;
-
   return (
     <div className={"filter" + (filterActive ? " filter-active" : "")}>
       <div className="filter-sub-data">
         <h3>Watches</h3>
-        <p>{filters.totalItems} Items</p>
+        <p>({filters.totalItems} Items)</p>
       </div>
       <div className="filter-head">
         <p>
@@ -65,10 +64,11 @@ export const Filter = () => {
         {!!sizes && (
           <FilterItem
             data={sizes}
-            title="Size"
+            title="Case Size"
             dispatcher={setSizeFilter}
             className="size"
             activeFilters={filters.size}
+            type="size"
           />
         )}
         {!!availabilities && (

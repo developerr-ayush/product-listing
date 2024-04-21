@@ -9,15 +9,14 @@ export const Sort = () => {
       <select
         name="sort"
         id=""
+        defaultValue={"newest"}
         onChange={(e) => {
           dispatch(setSortBy(e.target.value));
         }}
       >
         <option value="priceLowToHigh">Price: Low to High</option>
         <option value="priceHighToLow">Price: High to Low</option>
-        <option value="newest" selected>
-          Newest
-        </option>
+        <option value="newest">Newest</option>
         <option value="discount">Discount</option>
       </select>
     </div>
