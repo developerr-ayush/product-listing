@@ -8,10 +8,12 @@ export const FilterItem = ({
   dispatcher,
   className,
   activeFilters,
+  type,
 }) => {
   const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(window.innerWidth > 768 ? true : false);
   const toggleOpen = () => setIsOpen(!isOpen);
+  if (data.length === 0) return null;
   return (
     <div
       className={
@@ -26,31 +28,7 @@ export const FilterItem = ({
       </button>
       <div className="filter-item-body">
         <ul>
-          {data.sort().map((e, i) => {
-            if (activeFilters && activeFilters.includes(e)) {
-              return (
-                <li key={i}>
-                  <label htmlFor={e}>
-                    <input
-                      type="checkbox"
-                      name={e}
-                      id={e}
-                      value={e}
-                      checked
-                      onChange={(e) => {
-                        dispatch(
-                          dispatcher({
-                            name: e.target.name,
-                            value: e.target.checked,
-                          })
-                        );
-                      }}
-                    />
-                    {e}
-                  </label>
-                </li>
-              );
-            }
+        {data.map((e, i) => {
             return (
               <li key={i}>
                 <label htmlFor={e}>
@@ -58,6 +36,7 @@ export const FilterItem = ({
                     type="checkbox"
                     name={e}
                     id={e}
+                    checked={activeFilters && activeFilters.includes(e)}
                     onChange={(e) => {
                       dispatch(
                         dispatcher({
@@ -67,6 +46,16 @@ export const FilterItem = ({
                       );
                     }}
                   />
+                  {type == "color" ? (
+                    <span
+                      className="color"
+                      style={{
+                        backgroundColor: e,
+                      }}
+                    ></span>
+                  ) : (
+                    ""
+                  )}
                   {e}
                 </label>
               </li>
@@ -82,5 +71,6 @@ FilterItem.propTypes = {
   data: PropTypes.array.isRequired,
   dispatcher: PropTypes.func.isRequired,
   className: PropTypes.string,
+  type: PropTypes.string,
   activeFilters: PropTypes.array.isRequired,
 };

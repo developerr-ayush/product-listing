@@ -45,11 +45,44 @@ export const filteredWatches = (watches, filters) => {
       return false;
     }
     // Filter by price range
-    if (
-      watch.discountedPrice < priceRange.min ||
-      watch.discountedPrice > priceRange.max
-    ) {
-      return false;
+    console.log(priceRange);
+    if (priceRange.length > 0) {
+      if (
+        priceRange.includes("Under ₹10000") &&
+        watch.discountedPrice > 10000
+      ) {
+        return false;
+      }
+      if (
+        priceRange.includes("Under ₹20000") &&
+        watch.discountedPrice > 20000
+      ) {
+        return false;
+      }
+      if (
+        priceRange.includes("₹25000 - ₹30000") &&
+        (watch.discountedPrice < 25000 || watch.discountedPrice > 30000)
+      ) {
+        return false;
+      }
+      if (
+        priceRange.includes("₹35000 - ₹50000") &&
+        (watch.discountedPrice < 35000 || watch.discountedPrice > 50000)
+      ) {
+        return false;
+      }
+      if (
+        priceRange.includes("₹50000 - ₹100000") &&
+        (watch.discountedPrice < 50000 || watch.discountedPrice > 100000)
+      ) {
+        return false;
+      }
+      if (
+        priceRange.includes("Above ₹100000") &&
+        watch.discountedPrice < 100000
+      ) {
+        return false;
+      }
     }
     // Filter by size
     if (size.length > 0 && !checkElements(size, watch.size)) {
@@ -117,7 +150,14 @@ export const sortedWatches = (watches, sortCriteria) => {
 export const getAvailableFilterOptions = (watches) => {
   const availableOptions = {
     brands: [],
-    priceRanges: [],
+    priceRanges: [
+      "Under ₹10000",
+      "Under ₹20000",
+      "₹25000 - ₹30000",
+      "₹35000 - ₹50000",
+      "₹50000 - ₹100000",
+      "Above ₹100000",
+    ],
     sizes: [],
     styles: [],
     dialColors: [],
@@ -136,13 +176,6 @@ export const getAvailableFilterOptions = (watches) => {
       availableOptions.brands.push(watch.brand);
     }
     // Collect unique price ranges
-    const priceRangeKey = `${watch.price.min}-${watch.price.max}`;
-    if (
-      !availableOptions.priceRanges.some((range) => range === priceRangeKey)
-    ) {
-      availableOptions.priceRanges.push(priceRangeKey);
-    }
-
     // Collect unique sizes
     watch.size.forEach((size) => {
       if (!availableOptions.sizes.includes(size)) {
@@ -182,6 +215,6 @@ export const getAvailableFilterOptions = (watches) => {
       availableOptions.purchaseYears.push(watch.purchaseYear);
     }
   });
-
+  availableOptions.sizes.sort();
   return availableOptions;
 };

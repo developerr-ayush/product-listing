@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   brand: [],
-  priceRange: { min: 0, max: Infinity },
+  priceRange: [],
   size: [],
   style: [],
   dialColor: [],
@@ -12,6 +12,7 @@ const initialState = {
   movementType: [],
   caseMaterial: [],
   purchaseYear: [],
+  totalItems: 0,
 };
 
 const filtersSlice = createSlice({
@@ -30,8 +31,16 @@ const filtersSlice = createSlice({
       }
     },
     setPriceRangeFilter(state, action) {
-      const { min, max } = action.payload;
-      state.priceRange = { min, max };
+      const { name, value } = action.payload;
+      if (value) {
+        state.priceRange.push(name);
+      } else {
+        const index = state.priceRange.indexOf(name);
+        if (index > -1) {
+          state.priceRange.splice(index, 1);
+        }
+      }
+      state.priceRange = state.priceRange.sort();
     },
     setDiscountPercentageFilter(state, action) {
       const { name, value } = action.payload;
@@ -156,6 +165,9 @@ const filtersSlice = createSlice({
       state.caseMaterial = [];
       state.purchaseYear = [];
     },
+    setTotalItem(state, actions) {
+      state.totalItems = actions.payload;
+    },
   },
 });
 
@@ -173,6 +185,7 @@ export const {
   setMovementTypeFilter,
   setCaseMaterialFilter,
   setPurchaseYearFilter,
+  setTotalItem,
   reset,
 } = filtersSlice.actions;
 

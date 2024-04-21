@@ -12,6 +12,7 @@ import {
   setDialColorFilter,
   setGenderFilter,
   setMovementTypeFilter,
+  setPriceRangeFilter,
   setPurchaseYearFilter,
   setSizeFilter,
   setStrapColorFilter,
@@ -39,6 +40,10 @@ export const Filter = () => {
 
   return (
     <div className={"filter" + (filterActive ? " filter-active" : "")}>
+      <div className="filter-sub-data">
+        <h3>Watches</h3>
+        <p>{filters.totalItems} Items</p>
+      </div>
       <div className="filter-head">
         <p>
           <LuListFilter />
@@ -74,7 +79,7 @@ export const Filter = () => {
             activeFilters={filters.availability}
           />
         )}
-        {!!genders && (
+        {!!genders.length && (
           <FilterItem
             data={genders}
             title="Gender"
@@ -90,7 +95,14 @@ export const Filter = () => {
             activeFilters={filters.brand}
           />
         )}
-        {!!priceRanges && <FilterItem data={priceRanges} title="Price" />}
+        {!!priceRanges && (
+          <FilterItem
+            data={priceRanges}
+            title="Price"
+            type="price"
+            dispatcher={setPriceRangeFilter}
+          />
+        )}
 
         {!!dialColors && (
           <FilterItem
@@ -98,6 +110,7 @@ export const Filter = () => {
             title="Dial Color"
             dispatcher={setDialColorFilter}
             activeFilters={filters.dialColor}
+            type="color"
           />
         )}
         {!!styles && (
@@ -109,6 +122,7 @@ export const Filter = () => {
             title="Strap Color"
             dispatcher={setStrapColorFilter}
             activeFilters={filters.strapColor}
+            type={"color"}
           />
         )}
 
