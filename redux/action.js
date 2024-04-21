@@ -32,28 +32,10 @@ export const checkElements = (arr1, arr2) => {
   return a;
 };
 export const filteredWatches = (watches, filters) => {
-  // Destructure filter criteria from the filters object
-  const {
-    priceRange,
-    size,
-    style,
-    dialColor,
-    strapColor,
-    gender,
-    availability,
-    movementType,
-    caseMaterial,
-    purchaseYear,
-  } = filters;
-
   // Filter watches based on each filter criteria
   return watches.filter((watch) => {
-    // Filter by brand
-    if (filters.brand.length > 0 && !filters.brand.includes(watch.brand)) {
-      return false;
-    }
-
-    if (priceRange.length > 0) {
+    let isMatching = true;
+    if (filters.priceRange.length > 0) {
       const priceRanges = {
         "Under ₹10000": watch.discountedPrice <= 10000,
         "Under ₹20000": watch.discountedPrice < 20000,
@@ -73,7 +55,7 @@ export const filteredWatches = (watches, filters) => {
       }
     }
     // Filter by size
-    if (size.length > 0) {
+    if (filters.size.length > 0) {
       const sizeRanges = {
         "<17mm": isRangeExist(watch.size, 0, 16),
         "17 - 19mm": isRangeExist(watch.size, 17, 19),
@@ -96,41 +78,19 @@ export const filteredWatches = (watches, filters) => {
         return false;
       }
     }
-    // Filter by style
-    if (style.length > 0 && !style.includes(watch.style)) {
-      return false;
-    }
-    // Filter by dial color
-    if (dialColor.length > 0 && !dialColor.includes(watch.dialColor)) {
-      return false;
-    }
-    // Filter by strap color
-    if (strapColor.length > 0 && !strapColor.includes(watch.strapColor)) {
-      return false;
-    }
-    // Filter by gender
-    if (gender.length > 0 && !gender.includes(watch.gender)) {
-      return false;
-    }
-    // Filter by availability
-    if (availability.length > 0 && !availability.includes(watch.availability)) {
-      return false;
-    }
-
-    // Filter by movement type
-    if (movementType.length > 0 && !movementType.includes(watch.movementType)) {
-      return false;
-    }
-    // Filter by case material
-    if (caseMaterial.length > 0 && !caseMaterial.includes(watch.caseMaterial)) {
-      return false;
-    }
-    // Filter by purchase year
-    if (purchaseYear.length > 0 && !purchaseYear.includes(watch.purchaseYear)) {
-      return false;
+    const filterKeys = Object.keys(filters);
+    for (const key of filterKeys) {
+      if (key === "priceRange" || key === "size") {
+        continue;
+      }
+      if (filters[key].length > 0) {
+        if (!filters[key].includes(watch[key])) {
+          isMatching = false;
+        }
+      }
     }
     // If the watch passes all filters, include it in the result
-    return true;
+    return isMatching;
   });
 };
 export const sortedWatches = (watches, sortCriteria) => {

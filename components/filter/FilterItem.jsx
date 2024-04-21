@@ -13,6 +13,9 @@ export const FilterItem = ({
   const dispatch = useDispatch();
   const [isOpen, setIsOpen] = useState(window.innerWidth > 768 ? true : false);
   const toggleOpen = () => setIsOpen(!isOpen);
+  const maxItems = type == "size" ? 30 : 5;
+  const [openMoreData, setOpenMoreData] = useState(data.length < maxItems);
+  const toggleMoreData = () => setOpenMoreData(!openMoreData);
   if (data.length === 0) return null;
   return (
     <div
@@ -29,6 +32,7 @@ export const FilterItem = ({
       <div className="filter-item-body">
         <ul>
           {data.map((e, i) => {
+            if (!openMoreData && i >= maxItems) return null;
             return (
               <li key={i}>
                 <label htmlFor={e}>
@@ -61,6 +65,11 @@ export const FilterItem = ({
               </li>
             );
           })}
+          {data.length > maxItems && (
+            <button className="show-more" onClick={toggleMoreData}>
+              {openMoreData ? "Show Less" : "Show More"}
+            </button>
+          )}
         </ul>
       </div>
     </div>
