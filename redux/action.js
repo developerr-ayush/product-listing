@@ -1,3 +1,12 @@
+const isRangeExist = (arr, min, max) => {
+  let a = false;
+  arr.forEach((e) => {
+    if (e >= min && e <= max) {
+      a = true;
+    }
+  });
+  return a;
+};
 export const fetchData = async () => {
   try {
     const response = await fetch("/data/products.json");
@@ -25,7 +34,6 @@ export const checkElements = (arr1, arr2) => {
 export const filteredWatches = (watches, filters) => {
   // Destructure filter criteria from the filters object
   const {
-    brand,
     priceRange,
     size,
     style,
@@ -41,52 +49,52 @@ export const filteredWatches = (watches, filters) => {
   // Filter watches based on each filter criteria
   return watches.filter((watch) => {
     // Filter by brand
-    if (brand.length > 0 && !brand.includes(watch.brand)) {
+    if (filters.brand.length > 0 && !filters.brand.includes(watch.brand)) {
       return false;
     }
-    // Filter by price range
-    console.log(priceRange);
+
     if (priceRange.length > 0) {
-      if (
-        priceRange.includes("Under ₹10000") &&
-        watch.discountedPrice > 10000
-      ) {
-        return false;
-      }
-      if (
-        priceRange.includes("Under ₹20000") &&
-        watch.discountedPrice > 20000
-      ) {
-        return false;
-      }
-      if (
-        priceRange.includes("₹25000 - ₹30000") &&
-        (watch.discountedPrice < 25000 || watch.discountedPrice > 30000)
-      ) {
-        return false;
-      }
-      if (
-        priceRange.includes("₹35000 - ₹50000") &&
-        (watch.discountedPrice < 35000 || watch.discountedPrice > 50000)
-      ) {
-        return false;
-      }
-      if (
-        priceRange.includes("₹50000 - ₹100000") &&
-        (watch.discountedPrice < 50000 || watch.discountedPrice > 100000)
-      ) {
-        return false;
-      }
-      if (
-        priceRange.includes("Above ₹100000") &&
-        watch.discountedPrice < 100000
-      ) {
+      const priceRanges = {
+        "Under ₹10000": watch.discountedPrice <= 10000,
+        "Under ₹20000": watch.discountedPrice < 20000,
+        "₹25000 - ₹30000":
+          watch.discountedPrice >= 25000 && watch.discountedPrice <= 30000,
+        "₹35000 - ₹50000":
+          watch.discountedPrice >= 35000 && watch.discountedPrice <= 50000,
+        "₹50000 - ₹100000":
+          watch.discountedPrice >= 50000 && watch.discountedPrice <= 100000,
+        "Above ₹100000": watch.discountedPrice > 100000,
+      };
+      const isMatchingPriceRange = filters.priceRange.some(
+        (range) => priceRanges[range]
+      );
+      if (!isMatchingPriceRange) {
         return false;
       }
     }
     // Filter by size
-    if (size.length > 0 && !checkElements(size, watch.size)) {
-      return false;
+    if (size.length > 0) {
+      const sizeRanges = {
+        "<17mm": isRangeExist(watch.size, 0, 16),
+        "17 - 19mm": isRangeExist(watch.size, 17, 19),
+        "20 - 22mm": isRangeExist(watch.size, 20, 22),
+        "23 - 25mm": isRangeExist(watch.size, 23, 25),
+        "26 - 28mm": isRangeExist(watch.size, 26, 28),
+        "29 - 31mm": isRangeExist(watch.size, 29, 31),
+        "32 - 34mm": isRangeExist(watch.size, 32, 34),
+        "35 - 37mm": isRangeExist(watch.size, 35, 37),
+        "38 - 40mm": isRangeExist(watch.size, 38, 40),
+        "41 - 43mm": isRangeExist(watch.size, 41, 43),
+        "44 - 46mm": isRangeExist(watch.size, 44, 46),
+        "47 - 49mm": isRangeExist(watch.size, 47, 49),
+        "<50mm": isRangeExist(watch.size, 50, 1000),
+      };
+      const isMatchingSizeRange = filters.size.some(
+        (range) => sizeRanges[range]
+      );
+      if (!isMatchingSizeRange) {
+        return false;
+      }
     }
     // Filter by style
     if (style.length > 0 && !style.includes(watch.style)) {
@@ -158,7 +166,21 @@ export const getAvailableFilterOptions = (watches) => {
       "₹50000 - ₹100000",
       "Above ₹100000",
     ],
-    sizes: [],
+    sizes: [
+      "<17mm",
+      "17 - 19mm",
+      "20 - 22mm",
+      "23 - 25mm",
+      "26 - 28mm",
+      "29 - 31mm",
+      "32 - 34mm",
+      "35 - 37mm",
+      "38 - 40mm",
+      "41 - 43mm",
+      "44 - 46mm",
+      "47 - 49mm",
+      "<50mm",
+    ],
     styles: [],
     dialColors: [],
     strapColors: [],
@@ -175,13 +197,6 @@ export const getAvailableFilterOptions = (watches) => {
     if (!availableOptions.brands.includes(watch.brand)) {
       availableOptions.brands.push(watch.brand);
     }
-    // Collect unique price ranges
-    // Collect unique sizes
-    watch.size.forEach((size) => {
-      if (!availableOptions.sizes.includes(size)) {
-        availableOptions.sizes.push(size);
-      }
-    });
     // Collect unique styles
     if (!availableOptions.styles.includes(watch.style)) {
       availableOptions.styles.push(watch.style);
@@ -215,6 +230,5 @@ export const getAvailableFilterOptions = (watches) => {
       availableOptions.purchaseYears.push(watch.purchaseYear);
     }
   });
-  availableOptions.sizes.sort();
   return availableOptions;
 };

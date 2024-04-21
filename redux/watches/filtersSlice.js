@@ -56,9 +56,9 @@ const filtersSlice = createSlice({
     setSizeFilter(state, action) {
       const { name, value } = action.payload;
       if (value) {
-        state.size.push(+name);
+        state.size.push(name);
       } else {
-        const index = state.size.indexOf(+name);
+        const index = state.size.indexOf(name);
         if (index > -1) {
           state.size.splice(index, 1);
         }
