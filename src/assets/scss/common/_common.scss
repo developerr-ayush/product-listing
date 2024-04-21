@@ -67,3 +67,12 @@ img {
     }
   }
 }
+
+.no-data {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 2rem;
+  flex: 1;
+  grid-column: 1/-1;
+}
